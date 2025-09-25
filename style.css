@@ -1,0 +1,46 @@
+
+:root{
+  --navy:#1a1a40;
+  --gold:#d4af37;
+  --bg:#ffffff;
+  --text:#333333;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+.container{max-width:var(--container);margin:0 auto;padding:20px}
+.site-header{background:linear-gradient(180deg, rgba(26,26,64,0.03), rgba(255,255,255,0));border-bottom:1px solid rgba(0,0,0,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 20px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{height:64px;object-fit:contain}
+.brand h1{margin:0;font-size:20px;color:var(--navy)}
+.tagline{margin:0;font-size:12px;color:rgba(0,0,0,0.6)}
+
+.nav{display:flex;gap:14px}
+.nav a{color:var(--navy);text-decoration:none;padding:8px 10px;border-radius:6px;font-size:14px}
+.nav a:hover{background:rgba(26,26,64,0.06)}
+
+.hero{background:linear-gradient(90deg, rgba(26,26,64,0.04), rgba(212,175,55,0.02));padding:40px;border-radius:8px;margin:20px 0;display:flex;flex-direction:column;gap:14px}
+.hero h2{margin:0;color:var(--navy);font-size:28px}
+.hero p{margin:0;color:rgba(0,0,0,0.7)}
+
+.cta{display:inline-block;margin-top:8px;padding:10px 16px;background:var(--navy);color:white;text-decoration:none;border-radius:6px}
+
+.section{background:white;padding:18px;border-radius:8px;margin-top:18px}
+.section h3{margin-top:0;color:var(--navy)}
+
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:10px}
+.service-card{padding:14px;border-radius:8px;border:1px solid rgba(0,0,0,0.04)}
+
+.footer{margin-top:30px;padding:14px;text-align:center;color:rgba(0,0,0,0.6)}
+
+/* Contact form simple styles */
+form.contact-form{display:flex;flex-direction:column;gap:10px;max-width:600px}
+input[type="text"],input[type="email"],textarea{padding:10px;border:1px solid rgba(0,0,0,0.12);border-radius:6px;font-size:14px;width:100%}
+button[type="submit"]{padding:10px 14px;background:var(--navy);color:white;border:none;border-radius:6px;cursor:pointer}
+
+/* Responsive */
+@media(max-width:800px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:10px}
+  .logo{height:56px}
+}
